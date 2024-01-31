@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - GameKOR</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/good.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="barra">
+                <img src="../img/good.png" id="logo" alt="logo de la empresa">
+                <a href="../index.html">Inicio</a>
+                <a href="juegos.html">Juegos</a>
+                <a href="registrarse.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    <main id="productos">
+        <article class="producto" id="producto1">
+            <h2>Horizon Forbidden West - PS5</h2>
+            <img src="../img/juego1.jpg" alt="Horizon Forbidden West - PS5">
+            <p>69,99€</p>
+            <button onclick="agregarAlCarrito('Horizon Forbidden West - PS5', 69.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto2">
+            <h2>Spider-Man Miles Morales - PS5</h2>
+            <img src="../img/juego2.jpg" alt="Spider-Man Miles Morales - PS5">
+            <p><del>79,99€</del><br>69,99€</p>
+            <button onclick="agregarAlCarrito('Spider-Man Miles Morales - PS5', 69.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto3">
+            <h2>Spider-Man Miles Morales - PS4</h2>
+            <img src="../img/juego3.jpg" alt="Spider-Man Miles Morales - PS4">
+            <p><del>59,99€</del><br>49,99€</p>
+            <button onclick="agregarAlCarrito('Spider-Man Miles Morales - PS4', 49.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto4">
+            <h2>Halo Infinite - XBOX Series X</h2>
+            <img src="../img/juego4.jpg" alt="Halo Infinite - XBOX Series X">
+            <p>69,99€</p>
+            <button onclick="agregarAlCarrito('Halo Infinite - XBOX Series X', 69.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto5">
+            <h2>Gears Tactics - XBOX One</h2>
+            <img src="../img/juego5.jpg" alt="Gears Tactics - XBOX One">
+            <p><del>59,99€</del><br>49,99€</p>
+            <button onclick="agregarAlCarrito('Gears Tactics - XBOX One', 49.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto6">
+            <h2>Gears 5 - XBOX One</h2>
+            <img src="../img/juego6.jpg" alt="Gears 5 - XBOX One">
+            <p><del>49,99€</del><br>34,99€</p>
+            <button onclick="agregarAlCarrito('Gears 5 - XBOX One', 34.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto7">
+            <h2>Super Mario Odissey - Nintendo Switch</h2>
+            <img src="../img/juego7.jpg" alt="Super Mario Odissey - Nintendo Switch">
+            <p><del>39,99€</del><br>29,99€</p>
+            <button onclick="agregarAlCarrito('Super Mario Odissey - Nintendo Switch', 29.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto8">
+            <h2>The Legend Of Zelda: Breath Of The Wild - Nintendo Switch</h2>
+            <img src="../img/juego8.jpg" alt="The Legend Of Zelda: Breath Of The Wild - Nintendo Switch">
+            <p><del>29,99€</del><br>24,99€</p>
+            <button onclick="agregarAlCarrito('The Legend Of Zelda: Breath Of The Wild - Nintendo Switch', 24.99)">Agregar al Carrito</button>
+        </article>
+        <article class="producto" id="producto9">
+            <h2>Super Mario Kart 8 Deluxe - Nintendo Switch</h2>
+            <img src="../img/juego9.jpg" alt="Super Mario Kart 8 Deluxe - Nintendo Switch">
+            <p>19,99€</p>
+            <button onclick="agregarAlCarrito('Super Mario Kart 8 Deluxe - Nintendo Switch', 19.99)">Agregar al Carrito</button>
+        </article>
+        <article id="carrito">
+            <h2 id="tituloCarrito">Carrito</h2>
+            <div id="itemsCarrito"></div>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <div id="totalCarrito"></div>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p>Política de Privacidad - GameKOR<br>
+            Última actualización: 11 de diciembre de 2023<br>
+            En GameKOR, operado por GameKOR.S.L., nos comprometemos a proteger tu privacidad. Consulta nuestra Política de Privacidad para entender cómo recopilamos, usamos y protegemos tu información. Para preguntas, contáctanos a gamekoratencionalcliente@gmail.com. ¡Gracias por confiar en nosotros!</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
